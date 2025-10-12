@@ -1,0 +1,1066 @@
+
+
+local FZHUBFORPHONE = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local KeySystemFrame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local ImageButton = Instance.new("ImageButton")
+local WelcomeFrame = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local ScriptFrame = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local FarmKillsButton = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local InfoButton = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local MinimizeButton = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local TitleImage = Instance.new("ImageLabel")
+local UICorner_10 = Instance.new("UICorner")
+local AutoResetButton = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local SetSpawnButton = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local OptimizationButton = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local RejoinButton = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local TpButton = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local InformationFrame = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner_17 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+
+--Properties:
+
+FZHUBFORPHONE.Name = "FZ HUB FOR PHONE"
+FZHUBFORPHONE.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+FZHUBFORPHONE.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+FZHUBFORPHONE.ResetOnSpawn = false
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = FZHUBFORPHONE
+MainFrame.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+MainFrame.BackgroundTransparency = 0.100
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(-0.443812132, 0, -0.0323981158, 0)
+MainFrame.Size = UDim2.new(0, 3586, 0, 984)
+MainFrame.Visible = false
+
+UICorner.Parent = MainFrame
+
+KeySystemFrame.Name = "KeySystemFrame"
+KeySystemFrame.Parent = MainFrame
+KeySystemFrame.BackgroundColor3 = Color3.fromRGB(20, 17, 28)
+KeySystemFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KeySystemFrame.BorderSizePixel = 0
+KeySystemFrame.Position = UDim2.new(0.129392102, 0, 0.0873983726, 0)
+KeySystemFrame.Size = UDim2.new(0, 374, 0, 210)
+
+UICorner_2.Parent = KeySystemFrame
+
+TextButton.Parent = KeySystemFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(93, 38, 162)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0828877017, 0, 0.647619069, 0)
+TextButton.Size = UDim2.new(0, 312, 0, 47)
+TextButton.Font = Enum.Font.SourceSansBold
+TextButton.Text = "Submit"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 24.000
+
+UICorner_3.Parent = TextButton
+
+TextBox.Parent = KeySystemFrame
+TextBox.BackgroundColor3 = Color3.fromRGB(45, 47, 74)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0828877017, 0, 0.333333343, 0)
+TextBox.Size = UDim2.new(0, 312, 0, 46)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderText = "TextBox"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(178, 178, 178)
+TextBox.TextSize = 19.000
+
+UICorner_4.Parent = TextBox
+
+TextLabel.Parent = KeySystemFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.221925139, 0, 0.0476190485, 0)
+TextLabel.Size = UDim2.new(0, 206, 0, 45)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Enter Access Key:"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 21.000
+TextLabel.TextWrapped = true
+
+ImageButton.Parent = FZHUBFORPHONE
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.458942086, 0, -0.000223908923, 0)
+ImageButton.Size = UDim2.new(0, 58, 0, 51)
+ImageButton.Visible = false
+ImageButton.Image = "rbxassetid://132782852102479"
+
+WelcomeFrame.Name = "WelcomeFrame"
+WelcomeFrame.Parent = FZHUBFORPHONE
+WelcomeFrame.BackgroundColor3 = Color3.fromRGB(3, 3, 3)
+WelcomeFrame.BackgroundTransparency = 0.200
+WelcomeFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WelcomeFrame.BorderSizePixel = 0
+WelcomeFrame.Position = UDim2.new(0.564037085, 0, 0.774827003, 0)
+WelcomeFrame.Size = UDim2.new(0, 301, 0, 80)
+
+TextLabel_2.Parent = WelcomeFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0252052881, 0, 0.470798492, 0)
+TextLabel_2.Size = UDim2.new(0, 114, 0, 36)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "Welcome, "
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 31.000
+
+UICorner_5.Parent = WelcomeFrame
+
+TextLabel_3.Parent = WelcomeFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(-0.000525490381, 0, 0.0723497421, 0)
+TextLabel_3.Size = UDim2.new(0, 144, 0, 9)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "System Says:"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 31.000
+
+TextLabel_4.Parent = WelcomeFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.274020284, 0, 0.306929976, 0)
+TextLabel_4.Size = UDim2.new(0, 108, 0, 4)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Script is loading in 3 secs."
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 31.000
+
+ScriptFrame.Name = "ScriptFrame"
+ScriptFrame.Parent = FZHUBFORPHONE
+ScriptFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 25)
+ScriptFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScriptFrame.BorderSizePixel = 0
+ScriptFrame.Position = UDim2.new(0.213442087, 0, 0.102554105, 0)
+ScriptFrame.Size = UDim2.new(0, 307, 0, 284)
+ScriptFrame.Visible = false
+
+UICorner_6.Parent = ScriptFrame
+
+Title.Name = "Title"
+Title.Parent = ScriptFrame
+Title.BackgroundColor3 = Color3.fromRGB(15, 15, 25)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.082885243, 0, 0.0263736621, 0)
+Title.Size = UDim2.new(0, 153, 0, 22)
+Title.Font = Enum.Font.SourceSansBold
+Title.Text = "Fz Hub v2"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 19.000
+Title.TextWrapped = true
+
+FarmKillsButton.Name = "FarmKillsButton"
+FarmKillsButton.Parent = ScriptFrame
+FarmKillsButton.BackgroundColor3 = Color3.fromRGB(60, 60, 100)
+FarmKillsButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FarmKillsButton.BorderSizePixel = 0
+FarmKillsButton.Position = UDim2.new(-0.00180530862, 0, 0.105055578, 0)
+FarmKillsButton.Size = UDim2.new(0, 151, 0, 31)
+FarmKillsButton.Font = Enum.Font.SourceSansBold
+FarmKillsButton.Text = "Farm Kills"
+FarmKillsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+FarmKillsButton.TextSize = 19.000
+
+UICorner_7.Parent = FarmKillsButton
+
+InfoButton.Name = "InfoButton"
+InfoButton.Parent = ScriptFrame
+InfoButton.BackgroundColor3 = Color3.fromRGB(60, 60, 100)
+InfoButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfoButton.BorderSizePixel = 0
+InfoButton.Position = UDim2.new(0.530866265, 0, 0.105055578, 0)
+InfoButton.Size = UDim2.new(0, 144, 0, 31)
+InfoButton.Font = Enum.Font.SourceSansBold
+InfoButton.Text = "Information"
+InfoButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfoButton.TextSize = 19.000
+
+UICorner_8.Parent = InfoButton
+
+MinimizeButton.Name = "MinimizeButton"
+MinimizeButton.Parent = ScriptFrame
+MinimizeButton.BackgroundColor3 = Color3.fromRGB(101, 106, 166)
+MinimizeButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MinimizeButton.BorderSizePixel = 0
+MinimizeButton.Position = UDim2.new(0.889963329, 0, 0, 0)
+MinimizeButton.Size = UDim2.new(0, 33, 0, 29)
+MinimizeButton.Font = Enum.Font.SourceSans
+MinimizeButton.Text = "-"
+MinimizeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+MinimizeButton.TextSize = 37.000
+MinimizeButton.TextWrapped = true
+
+UICorner_9.Parent = MinimizeButton
+
+TitleImage.Name = "TitleImage"
+TitleImage.Parent = ScriptFrame
+TitleImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TitleImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TitleImage.BorderSizePixel = 0
+TitleImage.Position = UDim2.new(0.623619258, 0, 0.100832336, 0)
+TitleImage.Size = UDim2.new(0, 34, 0, -28)
+TitleImage.Image = "rbxassetid://132782852102479"
+
+UICorner_10.Parent = TitleImage
+
+AutoResetButton.Name = "AutoResetButton"
+AutoResetButton.Parent = ScriptFrame
+AutoResetButton.BackgroundColor3 = Color3.fromRGB(120, 70, 180)
+AutoResetButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoResetButton.BorderSizePixel = 0
+AutoResetButton.Position = UDim2.new(0.0586281456, 0, 0.269220054, 0)
+AutoResetButton.Size = UDim2.new(0, 270, 0, 33)
+AutoResetButton.Font = Enum.Font.SourceSansBold
+AutoResetButton.Text = "AutoReset: OFF"
+AutoResetButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoResetButton.TextSize = 18.000
+
+UICorner_11.Parent = AutoResetButton
+
+SetSpawnButton.Name = "SetSpawnButton"
+SetSpawnButton.Parent = ScriptFrame
+SetSpawnButton.BackgroundColor3 = Color3.fromRGB(120, 70, 180)
+SetSpawnButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SetSpawnButton.BorderSizePixel = 0
+SetSpawnButton.Position = UDim2.new(0.0576061532, 0, 0.413196564, 0)
+SetSpawnButton.Size = UDim2.new(0, 270, 0, 33)
+SetSpawnButton.Font = Enum.Font.SourceSansBold
+SetSpawnButton.Text = "Set Spawn"
+SetSpawnButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+SetSpawnButton.TextSize = 18.000
+
+UICorner_12.Parent = SetSpawnButton
+
+OptimizationButton.Name = "OptimizationButton"
+OptimizationButton.Parent = ScriptFrame
+OptimizationButton.BackgroundColor3 = Color3.fromRGB(120, 70, 180)
+OptimizationButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OptimizationButton.BorderSizePixel = 0
+OptimizationButton.Position = UDim2.new(0.0576060526, 0, 0.553651929, 0)
+OptimizationButton.Size = UDim2.new(0, 270, 0, 33)
+OptimizationButton.Font = Enum.Font.SourceSansBold
+OptimizationButton.Text = "Optimization"
+OptimizationButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+OptimizationButton.TextSize = 18.000
+
+UICorner_13.Parent = OptimizationButton
+
+RejoinButton.Name = "RejoinButton"
+RejoinButton.Parent = ScriptFrame
+RejoinButton.BackgroundColor3 = Color3.fromRGB(120, 70, 180)
+RejoinButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RejoinButton.BorderSizePixel = 0
+RejoinButton.Position = UDim2.new(0.0576061532, 0, 0.849036932, 0)
+RejoinButton.Size = UDim2.new(0, 270, 0, 33)
+RejoinButton.Font = Enum.Font.SourceSansBold
+RejoinButton.Text = "Rejoin"
+RejoinButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+RejoinButton.TextSize = 18.000
+
+UICorner_14.Parent = RejoinButton
+
+TpButton.Name = "TpButton"
+TpButton.Parent = ScriptFrame
+TpButton.BackgroundColor3 = Color3.fromRGB(120, 70, 180)
+TpButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TpButton.BorderSizePixel = 0
+TpButton.Position = UDim2.new(0.0576061532, 0, 0.699214995, 0)
+TpButton.Size = UDim2.new(0, 270, 0, 33)
+TpButton.Font = Enum.Font.SourceSansBold
+TpButton.Text = "Teleport"
+TpButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TpButton.TextSize = 18.000
+
+UICorner_15.Parent = TpButton
+
+InformationFrame.Name = "InformationFrame"
+InformationFrame.Parent = ScriptFrame
+InformationFrame.BackgroundColor3 = Color3.fromRGB(32, 32, 54)
+InformationFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InformationFrame.BorderSizePixel = 0
+InformationFrame.Position = UDim2.new(0, 0, 0.247958869, 0)
+InformationFrame.Size = UDim2.new(0, 306, 0, 213)
+InformationFrame.Visible = false
+
+UICorner_16.Parent = InformationFrame
+
+ImageLabel.Parent = InformationFrame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(32, 32, 54)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.0361200981, 0, 0.0546545461, 0)
+ImageLabel.Size = UDim2.new(0, 66, 0, 55)
+ImageLabel.Image = "rbxassetid://132782852102479"
+
+UICorner_17.Parent = ImageLabel
+
+TextLabel_5.Parent = InformationFrame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(32, 32, 54)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.251052767, 0, 0.0890832469, 0)
+TextLabel_5.Size = UDim2.new(0, 93, 0, 20)
+TextLabel_5.Font = Enum.Font.SourceSansBold
+TextLabel_5.Text = "Fz Hub v2"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 21.000
+TextLabel_5.TextWrapped = true
+
+TextLabel_6.Parent = InformationFrame
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(32, 32, 54)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.251052767, 0, 0.18140386, 0)
+TextLabel_6.Size = UDim2.new(0, 101, 0, 20)
+TextLabel_6.Font = Enum.Font.SourceSansBold
+TextLabel_6.Text = "Status: 🟢"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 21.000
+TextLabel_6.TextWrapped = true
+
+TextLabel_7.Parent = InformationFrame
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(32, 32, 54)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.139891773, 0, 0.457493752, 0)
+TextLabel_7.Size = UDim2.new(0, 207, 0, 63)
+TextLabel_7.Font = Enum.Font.SourceSansBold
+TextLabel_7.Text = "Nothing to put here lol hi mobile users"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextSize = 21.000
+TextLabel_7.TextWrapped = true
+
+-- Scripts:
+
+local function VEYR_fake_script() -- FZHUBFORPHONE.LocalScript 
+	local script = Instance.new('LocalScript', FZHUBFORPHONE)
+
+	
+	local gui = script.Parent
+	local tweenService = game:GetService("TweenService")
+	
+	local welcomeFrame = gui:WaitForChild("WelcomeFrame")
+	local mainFrame = gui:WaitForChild("MainFrame")
+	
+	-- Ensure initial visibility
+	welcomeFrame.Visible = true
+	mainFrame.Visible = false
+	
+	-- Wait 3 seconds before switching
+	task.wait(3)
+	
+	-- Optional: Fade out welcome frame
+	local fadeOut = tweenService:Create(
+		welcomeFrame,
+		TweenInfo.new(0.6, Enum.EasingStyle.Sine, Enum.EasingDirection.Out),
+		{BackgroundTransparency = 1}
+	)
+	fadeOut:Play()
+	
+	-- Fade out text/image elements inside WelcomeFrame
+	for _, obj in ipairs(welcomeFrame:GetDescendants()) do
+		if obj:IsA("TextLabel") or obj:IsA("TextButton") then
+			tweenService:Create(obj, TweenInfo.new(0.6), {TextTransparency = 1}):Play()
+		elseif obj:IsA("ImageLabel") then
+			tweenService:Create(obj, TweenInfo.new(0.6), {ImageTransparency = 1}):Play()
+		end
+	end
+	
+	fadeOut.Completed:Wait()
+	welcomeFrame.Visible = false
+	
+	-- Show and fade in MainFrame
+	mainFrame.Visible = true
+	mainFrame.BackgroundTransparency = 1
+	
+	for _, obj in ipairs(mainFrame:GetDescendants()) do
+		if obj:IsA("TextLabel") or obj:IsA("TextButton") then
+			obj.TextTransparency = 1
+		elseif obj:IsA("ImageLabel") then
+			obj.ImageTransparency = 1
+		end
+	end
+	
+	local fadeIn = tweenService:Create(
+		mainFrame,
+		TweenInfo.new(0.6, Enum.EasingStyle.Sine, Enum.EasingDirection.Out),
+		{BackgroundTransparency = 0}
+	)
+	fadeIn:Play()
+	
+	for _, obj in ipairs(mainFrame:GetDescendants()) do
+		if obj:IsA("TextLabel") or obj:IsA("TextButton") then
+			tweenService:Create(obj, TweenInfo.new(0.6), {TextTransparency = 0}):Play()
+		elseif obj:IsA("ImageLabel") then
+			tweenService:Create(obj, TweenInfo.new(0.6), {ImageTransparency = 0}):Play()
+		end
+	end
+	
+end
+coroutine.wrap(VEYR_fake_script)()
+local function DJJAC_fake_script() -- KeySystemFrame.drag 
+	local script = Instance.new('LocalScript', KeySystemFrame)
+
+	local UI = script.Parent
+	
+	local Dragging
+	local Input
+	local Start
+	local StartPosition
+	
+	function Lerp(A, B, M)
+		return A + (B - A) * M
+	end
+	
+	local LMPos
+	local LGPos
+	
+	local Speed = 13
+	
+	function Update(Time)
+		if not StartPosition then
+			return
+		end
+	
+		if not Dragging and LGPos then
+			UI.Position = UDim2.new(StartPosition.X.Scale, Lerp(UI.Position.X.Offset, LGPos.X.Offset, Time * Speed), StartPosition.Y.Scale, Lerp(UI.Position.Y.Offset, LGPos.Y.Offset, Time * Speed))
+			return
+		end
+	
+		local Delta = (LMPos - game:GetService("UserInputService"):GetMouseLocation())
+	
+		local xGoal = (StartPosition.X.Offset - Delta.X)
+		local yGoal = (StartPosition.Y.Offset - Delta.Y)
+	
+		LGPos = UDim2.new(StartPosition.X.Scale, xGoal, StartPosition.Y.Scale, yGoal)
+		UI.Position = UDim2.new(StartPosition.X.Scale, Lerp(UI.Position.X.Offset, xGoal, Time * Speed), StartPosition.Y.Scale, Lerp(UI.Position.Y.Offset, yGoal, Time * Speed))
+	end
+	
+	UI.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			Dragging = true
+			Start = input.Position
+			StartPosition = UI.Position
+			LMPos = game:GetService("UserInputService"):GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					Dragging = false
+				end
+			end)
+		end
+	end)
+	
+	UI.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			Input = input
+		end
+	end)
+	
+	game:GetService("RunService").Heartbeat:Connect(Update)
+end
+coroutine.wrap(DJJAC_fake_script)()
+local function RIIZBUT_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	-- TextButton LocalScript
+	
+	-- CONFIGURATION
+	local CORRECT_KEY = "Yb7%Tg2^hK9!sLm4" -- change this to your own key
+	
+	-- SERVICES
+	local TweenService = game:GetService("TweenService")
+	
+	-- REFERENCES
+	local textButton = script.Parent
+	local keySystemFrame = textButton.Parent
+	local textBox = keySystemFrame:WaitForChild("TextBox")
+	local sharedKey = textBox:WaitForChild("EnteredKey")
+	
+	local mainFrame = keySystemFrame.Parent
+	local screenGui = mainFrame.Parent
+	local scriptFrame = screenGui:WaitForChild("ScriptFrame")
+	
+	-- INITIAL SETUP
+	scriptFrame.Visible = false
+	scriptFrame.BackgroundTransparency = 1
+	
+	-- TWEEN SETTINGS
+	local fadeTweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	-- FUNCTION: Vibrate animation (short, subtle shake)
+	local function vibrateButton(button)
+		local originalPos = button.Position
+		for i = 1, 6 do
+			local offsetX = math.random(-4, 4)
+			local offsetY = math.random(-2, 2)
+			button.Position = originalPos + UDim2.new(0, offsetX, 0, offsetY)
+			task.wait(0.02)
+		end
+		button.Position = originalPos
+	end
+	
+	-- FUNCTION: Fade in ScriptFrame
+	local function fadeInScriptFrame()
+		scriptFrame.Visible = true
+		local fadeIn = TweenService:Create(scriptFrame, fadeTweenInfo, {BackgroundTransparency = 0})
+		fadeIn:Play()
+	end
+	
+	-- MAIN FUNCTION
+	textButton.MouseButton1Click:Connect(function()
+		local enteredKey = sharedKey.Value
+	
+		if enteredKey == CORRECT_KEY then
+			-- ✅ CORRECT KEY: Fade transition
+			local fadeOut = TweenService:Create(mainFrame, fadeTweenInfo, {BackgroundTransparency = 1})
+			fadeOut:Play()
+			task.wait(1)
+			mainFrame.Visible = false
+			fadeInScriptFrame()
+	
+		else
+			-- ❌ INCORRECT KEY: Red text + vibrate + reset to white text
+			textBox.Text = "Incorrect, please try again."
+			textBox.TextColor3 = Color3.fromRGB(255, 0, 0)
+			vibrateButton(textButton)
+	
+			task.wait(1.5)
+	
+			-- Reset text color to white
+			textBox.Text = ""
+			textBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+		end
+	end)
+	
+end
+coroutine.wrap(RIIZBUT_fake_script)()
+local function WHAR_fake_script() -- TextBox.LocalScript 
+	local script = Instance.new('LocalScript', TextBox)
+
+	
+	
+	local textBox = script.Parent
+	
+	-- Create a shared variable for the entered key
+	local sharedKey = Instance.new("StringValue")
+	sharedKey.Name = "EnteredKey"
+	sharedKey.Value = ""
+	sharedKey.Parent = textBox
+	
+	-- Update whenever the player types
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()
+		sharedKey.Value = textBox.Text
+	end)
+	
+end
+coroutine.wrap(WHAR_fake_script)()
+local function TDQDNEQ_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	
+	
+	local TweenService = game:GetService("TweenService")
+	
+	-- UI references
+	local imageButton = script.Parent
+	local screenGui = imageButton.Parent
+	local mainFrame = screenGui:WaitForChild("ScriptFrame")
+	
+	-- Sounds
+	local hoverSound = imageButton:FindFirstChild("HoverSound")
+	local clickSound = imageButton:FindFirstChild("ClickSound")
+	
+	-- Initial states
+	mainFrame.Visible = false
+	mainFrame.BackgroundTransparency = 1
+	
+	-- Tween settings
+	local tweenInfo = TweenInfo.new(0.8, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local hoverTweenInfo = TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	-- // Hover effect
+	imageButton.MouseEnter:Connect(function()
+		-- Play hover sound
+		if hoverSound then hoverSound:Play() end
+	
+		-- Slightly shrink and dim the image
+		local shrinkTween = TweenService:Create(imageButton, hoverTweenInfo, {
+			Size = imageButton.Size - UDim2.new(0, 4, 0, 4),
+			ImageColor3 = Color3.fromRGB(200, 200, 200)
+		})
+		shrinkTween:Play()
+	end)
+	
+	-- // Mouse leaves (reset hover)
+	imageButton.MouseLeave:Connect(function()
+		local resetTween = TweenService:Create(imageButton, hoverTweenInfo, {
+			Size = imageButton.Size + UDim2.new(0, 4, 0, 4),
+			ImageColor3 = Color3.fromRGB(255, 255, 255)
+		})
+		resetTween:Play()
+	end)
+	
+	-- // Click effect (fade in frame + click sound)
+	imageButton.MouseButton1Click:Connect(function()
+		-- Play click sound
+		if clickSound then clickSound:Play() end
+	
+		-- Hide the button
+		imageButton.Visible = false
+	
+		-- Make frame visible so it can fade in
+		mainFrame.Visible = true
+	
+		-- Fade in the frame
+		local fadeInTween = TweenService:Create(mainFrame, tweenInfo, {BackgroundTransparency = 0})
+		fadeInTween:Play()
+	
+		-- Fade in all UI elements inside
+		for _, object in pairs(mainFrame:GetDescendants()) do
+			if object:IsA("TextLabel") or object:IsA("TextButton") or object:IsA("ImageLabel") or object:IsA("ImageButton") then
+				object.BackgroundTransparency = 1
+				if object:IsA("TextLabel") or object:IsA("TextButton") then
+					object.TextTransparency = 1
+				end
+	
+				local props = {BackgroundTransparency = 0}
+				if object:IsA("TextLabel") or object:IsA("TextButton") then
+					props.TextTransparency = 0
+				end
+	
+				local tween = TweenService:Create(object, tweenInfo, props)
+				tween:Play()
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(TDQDNEQ_fake_script)()
+local function OWYOQUM_fake_script() -- TextLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_2)
+
+	-- LocalScript inside TextLabel
+	local textLabel = script.Parent
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	
+	-- Set the TextLabel to show the player's name
+	textLabel.Text = "Welcome, " .. player.Name .. "to Fz Hub!"
+	
+end
+coroutine.wrap(OWYOQUM_fake_script)()
+local function DXEU_fake_script() -- ScriptFrame.drag 
+	local script = Instance.new('LocalScript', ScriptFrame)
+
+	local UI = script.Parent
+	
+	local Dragging
+	local Input
+	local Start
+	local StartPosition
+	
+	function Lerp(A, B, M)
+		return A + (B - A) * M
+	end
+	
+	local LMPos
+	local LGPos
+	
+	local Speed = 13
+	
+	function Update(Time)
+		if not StartPosition then
+			return
+		end
+	
+		if not Dragging and LGPos then
+			UI.Position = UDim2.new(StartPosition.X.Scale, Lerp(UI.Position.X.Offset, LGPos.X.Offset, Time * Speed), StartPosition.Y.Scale, Lerp(UI.Position.Y.Offset, LGPos.Y.Offset, Time * Speed))
+			return
+		end
+	
+		local Delta = (LMPos - game:GetService("UserInputService"):GetMouseLocation())
+	
+		local xGoal = (StartPosition.X.Offset - Delta.X)
+		local yGoal = (StartPosition.Y.Offset - Delta.Y)
+	
+		LGPos = UDim2.new(StartPosition.X.Scale, xGoal, StartPosition.Y.Scale, yGoal)
+		UI.Position = UDim2.new(StartPosition.X.Scale, Lerp(UI.Position.X.Offset, xGoal, Time * Speed), StartPosition.Y.Scale, Lerp(UI.Position.Y.Offset, yGoal, Time * Speed))
+	end
+	
+	UI.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			Dragging = true
+			Start = input.Position
+			StartPosition = UI.Position
+			LMPos = game:GetService("UserInputService"):GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					Dragging = false
+				end
+			end)
+		end
+	end)
+	
+	UI.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			Input = input
+		end
+	end)
+	
+	game:GetService("RunService").Heartbeat:Connect(Update)
+end
+coroutine.wrap(DXEU_fake_script)()
+local function ZGSKJK_fake_script() -- InfoButton.LocalScript 
+	local script = Instance.new('LocalScript', InfoButton)
+
+	
+	local button = script.Parent
+	local frame = script.Parent.Parent:WaitForChild("InformationFrame") -- change "Frame" if named differently
+	
+	-- optional: start hidden
+	frame.Visible = false
+	frame.BackgroundTransparency = 1
+	
+	-- tween service for smooth fade
+	local TweenService = game:GetService("TweenService")
+	
+	-- settings
+	local fadeTime = 0.3 -- seconds for fade animation
+	
+	-- function to fade in
+	local function fadeIn()
+		frame.Visible = true
+		local tween = TweenService:Create(frame, TweenInfo.new(fadeTime), {BackgroundTransparency = 0})
+		tween:Play()
+	end
+	
+	-- function to fade out
+	local function fadeOut()
+		local tween = TweenService:Create(frame, TweenInfo.new(fadeTime), {BackgroundTransparency = 1})
+		tween:Play()
+		tween.Completed:Connect(function()
+			frame.Visible = false
+		end)
+	end
+	
+	-- toggle on button click
+	local isVisible = false
+	button.MouseButton1Click:Connect(function()
+		isVisible = not isVisible
+		if isVisible then
+			fadeIn()
+		else
+			fadeOut()
+		end
+	end)
+	
+end
+coroutine.wrap(ZGSKJK_fake_script)()
+local function YDQNVUK_fake_script() -- MinimizeButton.LocalScript 
+	local script = Instance.new('LocalScript', MinimizeButton)
+
+	
+	local button = script.Parent
+	local mainFrame = button.Parent -- MainFrame
+	local screenGui = mainFrame.Parent -- ScreenGui
+	local imageButton = screenGui:WaitForChild("ImageButton")
+	
+	button.MouseButton1Click:Connect(function()
+		mainFrame.Visible = false
+		imageButton.Visible = true
+	end)
+	
+end
+coroutine.wrap(YDQNVUK_fake_script)()
+local function DGRULM_fake_script() -- AutoResetButton.LocalScript 
+	local script = Instance.new('LocalScript', AutoResetButton)
+
+	
+	
+	local button = script.Parent
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	
+	local autoResetEnabled = false
+	local connection
+	
+	local function toggleAutoReset()
+		autoResetEnabled = not autoResetEnabled
+	
+		if autoResetEnabled then
+			button.Text = "AutoReset: ON"
+	
+			local function setupHumanoid(humanoid)
+				connection = humanoid.HealthChanged:Connect(function(health)
+					if autoResetEnabled and health < humanoid.MaxHealth then
+	
+						humanoid.Health = 0
+					end
+				end)
+			end
+	
+	
+			if player.Character then
+				local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+				if humanoid then
+					setupHumanoid(humanoid)
+				end
+			end
+	
+	
+			player.CharacterAdded:Connect(function(char)
+				local humanoid = char:WaitForChild("Humanoid")
+				setupHumanoid(humanoid)
+			end)
+		else
+			button.Text = "AutoReset: OFF"
+	
+	
+			if connection then
+				connection:Disconnect()
+				connection = nil
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(toggleAutoReset)
+	
+	
+	button.Text = "AutoReset: OFF"
+	
+end
+coroutine.wrap(DGRULM_fake_script)()
+local function KSQXGPG_fake_script() -- SetSpawnButton.LocalScript 
+	local script = Instance.new('LocalScript', SetSpawnButton)
+
+	local button = script.Parent
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	
+	local stuckEnabled = false
+	local stuckPosition = nil
+	local loopConnection = nil
+	
+	local function startStuckLoop()
+		if loopConnection then
+			loopConnection:Disconnect()
+		end
+	
+		loopConnection = game:GetService("RunService").Heartbeat:Connect(function()
+			if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+				player.Character:MoveTo(stuckPosition)
+			end
+		end)
+	end
+	
+	
+	local function onCharacterAdded(character)
+		if stuckEnabled and stuckPosition then
+	
+			character:WaitForChild("HumanoidRootPart")
+			startStuckLoop()
+		end
+	end
+	
+	local function toggleStuck()
+		stuckEnabled = not stuckEnabled
+	
+		if stuckEnabled then
+			button.Text = "SetSpawn"
+	
+	
+			local char = player.Character
+			if char and char:FindFirstChild("HumanoidRootPart") then
+				stuckPosition = char.HumanoidRootPart.Position
+				startStuckLoop()
+			end
+	
+			player.CharacterAdded:Connect(onCharacterAdded)
+		else
+			button.Text = "SetSpawn"
+			stuckPosition = nil
+			if loopConnection then
+				loopConnection:Disconnect()
+				loopConnection = nil
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(toggleStuck)
+	
+end
+coroutine.wrap(KSQXGPG_fake_script)()
+local function QPCYBQ_fake_script() -- OptimizationButton.LocalScript 
+	local script = Instance.new('LocalScript', OptimizationButton)
+
+	local button = script.Parent
+	local player = game:GetService("Players").LocalPlayer
+	local StarterGui = game:GetService("StarterGui")
+	
+	local clicked = false
+	
+	button.MouseButton1Click:Connect(function()
+		if clicked then return end
+		clicked = true
+	
+		local map = workspace:FindFirstChild("Map")
+		if map then
+			local trees = map:FindFirstChild("Trees")
+			local walls = map:FindFirstChild("Walls")
+			local grasstop = map:FindFirstChild("GrassTop")
+	
+			if grasstop then
+				grasstop:Destroy()
+			end
+			if trees then
+				trees:Destroy()
+			end
+			if walls then
+				walls:Destroy()
+			end
+		end
+	
+	
+		button.Text = "Optimization"
+		button.Active = false
+		button.AutoButtonColor = false
+	
+	
+		StarterGui:SetCore("SendNotification", {
+			Title = "SYSTEM SAYS:",
+			Text = "Succesfully made your game smoother !", 
+			Duration = 4, --
+		})
+	end)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	--- PROPERTY OF INF YIELD .. 2/3..2.2.12/.2.1..
+end
+coroutine.wrap(QPCYBQ_fake_script)()
+local function BJIQNV_fake_script() -- RejoinButton.LocalScript 
+	local script = Instance.new('LocalScript', RejoinButton)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local TeleportService = game:GetService("TeleportService")
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local placeId = game.PlaceId
+	
+		TeleportService:Teleport(placeId, player)
+	end)
+	
+end
+coroutine.wrap(BJIQNV_fake_script)()
+local function IBNRTJX_fake_script() -- TpButton.LocalScript 
+	local script = Instance.new('LocalScript', TpButton)
+
+	
+	
+	local button = script.Parent
+	local targetPosition = Vector3.new(-139, 440, -391)
+	
+	button.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+	
+		-- Teleport the player
+		humanoidRootPart.CFrame = CFrame.new(targetPosition)
+	end)
+	
+end
+coroutine.wrap(IBNRTJX_fake_script)()
