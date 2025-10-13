@@ -48,7 +48,7 @@ local TextLabel_5 = Instance.new("TextLabel")
 --Properties:
 
 fzhubmobilev2.Name = "fz hub mobilev2"
-fzhubmobilev2.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+fzhubmobilev2.Parent = game.Workspace
 fzhubmobilev2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 fzhubmobilev2.ResetOnSpawn = false
 
@@ -376,69 +376,56 @@ TextLabel_5.TextSize = 27.000
 
 -- Scripts:
 
-local function FZGFFWA_fake_script() -- KeySystemFrame.drag 
+local function AWHU_fake_script() -- KeySystemFrame.drag 
 	local script = Instance.new('LocalScript', KeySystemFrame)
 
-	local UI = script.Parent
 	
-	local Dragging
-	local Input
-	local Start
-	local StartPosition
 	
-	function Lerp(A, B, M)
-		return A + (B - A) * M
+	local frame = script.Parent
+	local userInputService = game:GetService("UserInputService")
+	local runService = game:GetService("RunService")
+	
+	local dragging = false
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		frame.Position = UDim2.new(
+			startPos.X.Scale,
+			startPos.X.Offset + delta.X,
+			startPos.Y.Scale,
+			startPos.Y.Offset + delta.Y
+		)
 	end
 	
-	local LMPos
-	local LGPos
-	
-	local Speed = 13
-	
-	function Update(Time)
-		if not StartPosition then
-			return
-		end
-	
-		if not Dragging and LGPos then
-			UI.Position = UDim2.new(StartPosition.X.Scale, Lerp(UI.Position.X.Offset, LGPos.X.Offset, Time * Speed), StartPosition.Y.Scale, Lerp(UI.Position.Y.Offset, LGPos.Y.Offset, Time * Speed))
-			return
-		end
-	
-		local Delta = (LMPos - game:GetService("UserInputService"):GetMouseLocation())
-	
-		local xGoal = (StartPosition.X.Offset - Delta.X)
-		local yGoal = (StartPosition.Y.Offset - Delta.Y)
-	
-		LGPos = UDim2.new(StartPosition.X.Scale, xGoal, StartPosition.Y.Scale, yGoal)
-		UI.Position = UDim2.new(StartPosition.X.Scale, Lerp(UI.Position.X.Offset, xGoal, Time * Speed), StartPosition.Y.Scale, Lerp(UI.Position.Y.Offset, yGoal, Time * Speed))
-	end
-	
-	UI.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			Dragging = true
-			Start = input.Position
-			StartPosition = UI.Position
-			LMPos = game:GetService("UserInputService"):GetMouseLocation()
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1
+			or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = frame.Position
 	
 			input.Changed:Connect(function()
 				if input.UserInputState == Enum.UserInputState.End then
-					Dragging = false
+					dragging = false
 				end
 			end)
 		end
 	end)
 	
-	UI.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			Input = input
+	frame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement
+			or input.UserInputType == Enum.UserInputType.Touch then
+			if dragging then
+				update(input)
+			end
 		end
 	end)
 	
-	game:GetService("RunService").Heartbeat:Connect(Update)
 end
-coroutine.wrap(FZGFFWA_fake_script)()
-local function PPLNABB_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(AWHU_fake_script)()
+local function JHPYRKI_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	
@@ -512,8 +499,8 @@ local function PPLNABB_fake_script() -- TextButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(PPLNABB_fake_script)()
-local function OAZALT_fake_script() -- TextBox.LocalScript 
+coroutine.wrap(JHPYRKI_fake_script)()
+local function EMUJOB_fake_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
 	
@@ -532,8 +519,8 @@ local function OAZALT_fake_script() -- TextBox.LocalScript
 	end)
 	
 end
-coroutine.wrap(OAZALT_fake_script)()
-local function FNMPUCV_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(EMUJOB_fake_script)()
+local function HBME_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	
@@ -565,8 +552,8 @@ local function FNMPUCV_fake_script() -- TextButton_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(FNMPUCV_fake_script)()
-local function IKPCVZ_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(HBME_fake_script)()
+local function DBSDJN_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	
@@ -647,70 +634,57 @@ local function IKPCVZ_fake_script() -- ImageButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(IKPCVZ_fake_script)()
-local function YISJ_fake_script() -- ScriptFrame.drag 
+coroutine.wrap(DBSDJN_fake_script)()
+local function BFBLNU_fake_script() -- ScriptFrame.drag 
 	local script = Instance.new('LocalScript', ScriptFrame)
 
-	local UI = script.Parent
 	
-	local Dragging
-	local Input
-	local Start
-	local StartPosition
 	
-	function Lerp(A, B, M)
-		return A + (B - A) * M
+	local frame = script.Parent
+	local userInputService = game:GetService("UserInputService")
+	local runService = game:GetService("RunService")
+	
+	local dragging = false
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		frame.Position = UDim2.new(
+			startPos.X.Scale,
+			startPos.X.Offset + delta.X,
+			startPos.Y.Scale,
+			startPos.Y.Offset + delta.Y
+		)
 	end
 	
-	local LMPos
-	local LGPos
-	
-	local Speed = 13
-	
-	function Update(Time)
-		if not StartPosition then
-			return
-		end
-	
-		if not Dragging and LGPos then
-			UI.Position = UDim2.new(StartPosition.X.Scale, Lerp(UI.Position.X.Offset, LGPos.X.Offset, Time * Speed), StartPosition.Y.Scale, Lerp(UI.Position.Y.Offset, LGPos.Y.Offset, Time * Speed))
-			return
-		end
-	
-		local Delta = (LMPos - game:GetService("UserInputService"):GetMouseLocation())
-	
-		local xGoal = (StartPosition.X.Offset - Delta.X)
-		local yGoal = (StartPosition.Y.Offset - Delta.Y)
-	
-		LGPos = UDim2.new(StartPosition.X.Scale, xGoal, StartPosition.Y.Scale, yGoal)
-		UI.Position = UDim2.new(StartPosition.X.Scale, Lerp(UI.Position.X.Offset, xGoal, Time * Speed), StartPosition.Y.Scale, Lerp(UI.Position.Y.Offset, yGoal, Time * Speed))
-	end
-	
-	UI.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			Dragging = true
-			Start = input.Position
-			StartPosition = UI.Position
-			LMPos = game:GetService("UserInputService"):GetMouseLocation()
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1
+			or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = frame.Position
 	
 			input.Changed:Connect(function()
 				if input.UserInputState == Enum.UserInputState.End then
-					Dragging = false
+					dragging = false
 				end
 			end)
 		end
 	end)
 	
-	UI.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			Input = input
+	frame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement
+			or input.UserInputType == Enum.UserInputType.Touch then
+			if dragging then
+				update(input)
+			end
 		end
 	end)
 	
-	game:GetService("RunService").Heartbeat:Connect(Update)
 end
-coroutine.wrap(YISJ_fake_script)()
-local function EULYBFO_fake_script() -- InfoButton.LocalScript 
+coroutine.wrap(BFBLNU_fake_script)()
+local function AXNZ_fake_script() -- InfoButton.LocalScript 
 	local script = Instance.new('LocalScript', InfoButton)
 
 	
@@ -755,8 +729,8 @@ local function EULYBFO_fake_script() -- InfoButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(EULYBFO_fake_script)()
-local function SMCSZG_fake_script() -- MinimizeButton.LocalScript 
+coroutine.wrap(AXNZ_fake_script)()
+local function VYNI_fake_script() -- MinimizeButton.LocalScript 
 	local script = Instance.new('LocalScript', MinimizeButton)
 
 	
@@ -771,8 +745,8 @@ local function SMCSZG_fake_script() -- MinimizeButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(SMCSZG_fake_script)()
-local function NLEMF_fake_script() -- AutoResetButton.LocalScript 
+coroutine.wrap(VYNI_fake_script)()
+local function XQKX_fake_script() -- AutoResetButton.LocalScript 
 	local script = Instance.new('LocalScript', AutoResetButton)
 
 	
@@ -829,8 +803,8 @@ local function NLEMF_fake_script() -- AutoResetButton.LocalScript
 	button.Text = "AutoReset: OFF"
 	
 end
-coroutine.wrap(NLEMF_fake_script)()
-local function QLCPJ_fake_script() -- SetSpawnButton.LocalScript 
+coroutine.wrap(XQKX_fake_script)()
+local function SIMNK_fake_script() -- SetSpawnButton.LocalScript 
 	local script = Instance.new('LocalScript', SetSpawnButton)
 
 	local button = script.Parent
@@ -889,8 +863,8 @@ local function QLCPJ_fake_script() -- SetSpawnButton.LocalScript
 	button.MouseButton1Click:Connect(toggleStuck)
 	
 end
-coroutine.wrap(QLCPJ_fake_script)()
-local function AXDT_fake_script() -- OptimizationButton.LocalScript 
+coroutine.wrap(SIMNK_fake_script)()
+local function XURDIGM_fake_script() -- OptimizationButton.LocalScript 
 	local script = Instance.new('LocalScript', OptimizationButton)
 
 	local button = script.Parent
@@ -977,8 +951,8 @@ local function AXDT_fake_script() -- OptimizationButton.LocalScript
 	
 	--- PROPERTY OF INF YIELD .. 2/3..2.2.12/.2.1..
 end
-coroutine.wrap(AXDT_fake_script)()
-local function IVMMFZ_fake_script() -- RejoinButton.LocalScript 
+coroutine.wrap(XURDIGM_fake_script)()
+local function LUFYDC_fake_script() -- RejoinButton.LocalScript 
 	local script = Instance.new('LocalScript', RejoinButton)
 
 	local button = script.Parent
@@ -993,8 +967,8 @@ local function IVMMFZ_fake_script() -- RejoinButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(IVMMFZ_fake_script)()
-local function OUTIRRL_fake_script() -- TpButton.LocalScript 
+coroutine.wrap(LUFYDC_fake_script)()
+local function ZXJKJXN_fake_script() -- TpButton.LocalScript 
 	local script = Instance.new('LocalScript', TpButton)
 
 	
@@ -1012,8 +986,8 @@ local function OUTIRRL_fake_script() -- TpButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(OUTIRRL_fake_script)()
-local function CYIYB_fake_script() -- TextLabel_5.LocalScript 
+coroutine.wrap(ZXJKJXN_fake_script)()
+local function LQPMUZZ_fake_script() -- TextLabel_5.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_5)
 
 	local textLabel = script.Parent
@@ -1069,4 +1043,4 @@ local function CYIYB_fake_script() -- TextLabel_5.LocalScript
 	end)
 	
 end
-coroutine.wrap(CYIYB_fake_script)()
+coroutine.wrap(LQPMUZZ_fake_script)()
